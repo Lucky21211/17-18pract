@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Заметки</h1>
+    <p id="status">🟢 Онлайн</p>
+    <textarea id="note-input" placeholder="Введите заметку..."></textarea>
+    <button id="add-note">Добавить</button>
+    <ul id="notes-list"></ul>
+
+    <!-- Кнопка установки PWA -->
+    <button id="installBtn" style="display: none;">📲 Установить на рабочий стол</button>
+
+    <!-- Сообщение для отображения состояния офлайн-режима -->
+    <p id="offlineMessage" style="display:none; color:red;">🔌 Офлайн-режим</p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
